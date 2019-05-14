@@ -30,8 +30,6 @@ app.get('/content', function (req, res) {
     res.render('content');
 });
 
-
-
 app.get('/auth/google', function (req, res) {
     res.render('login');
 });
@@ -43,14 +41,7 @@ app.get('/logged', function (req, res) {
         last_name: req.query.last_name
     });
 
-
 });
-
-
-
-
-
-
 
 app.get('/dynamic-view', function (req, res) {
     res.render('dynamic', {
